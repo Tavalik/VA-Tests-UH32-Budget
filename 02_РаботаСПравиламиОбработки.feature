@@ -660,8 +660,8 @@
 			|'Для Каждого СтрокаЗначение Из тЗначенияПоказателей_Количество Цикл'|
 			|''|
 			|' ПериодСмещение = ОтносительныйПериод(СтрокаЗначение.ПериодОтчета, 1);'|
-			|' Если ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(1))'|
-			|'  ИЛИ ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(2)) Тогда'|
+			|' Если ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(1)) ИЛИ'|
+			|'  ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(2)) Тогда'|
 			|''|
 			|'  УстановитьЗначениеПоказателя('|
 			|'   СтрокаЗначение.ПоказательОтчета,'|
@@ -680,8 +680,8 @@
 			|' КонецЕсли;'|
 			|''|
 			|' ПериодСмещение = ОтносительныйПериод(СтрокаЗначение.ПериодОтчета, 1);'|
-			|' Если ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(1))'|
-			|'  ИЛИ ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(2)) Тогда'|
+			|' Если ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(1)) ИЛИ'|
+			|'  ДатаПринадлежитПериоду(ПериодСмещение.ДатаНачала,ОбъектРасчета.МассивПериодов.Получить(2)) Тогда'|
 			|''|
 			|'  УстановитьЗначениеПоказателя('|
 			|'   СтрокаЗначение.ПоказательОтчета,'|
@@ -722,8 +722,8 @@
 				|'For Each StringValue In tValuesIndicators_Number Do'|
 				|''|
 				|' PeriodOffset = URelativePeriod(StringValue.ПериодОтчета, 1);'|
-				|' If UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1))'|
-				|'  OR UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
+				|' If UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1)) OR'|
+				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
 				|''|
 				|'  USetIndicatorsValue('|
 				|'   StringValue.ПоказательОтчета,'|
@@ -742,8 +742,8 @@
 				|' EndIf;'|
 				|''|
 				|' PeriodOffset = URelativePeriod(StringValue.ПериодОтчета, 1);'|
-				|' Если UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1))'|
-				|'  OR UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
+				|' Если UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1)) OR'|
+				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
 				|''|
 				|'  USetIndicatorsValue('|
 				|'   StringValue.ПоказательОтчета,'|
