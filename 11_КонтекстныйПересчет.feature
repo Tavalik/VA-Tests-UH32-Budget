@@ -1287,9 +1287,9 @@
 				| 'Ошибки'                                                                                                                                                                                  |
 				| 'Выбранная валюта KZT не соответствует валютам установленным в регламенте по параметрам:\n	Сценарий: "ВА - Основной сценарий",\n	Организация: "Меркурий ООО",\n	Период: "Январь 2021 г."' |
 		Иначе
-			Тогда табличный документ 'ПолеТабличногоДокумента' равен:
+			Тогда табличный документ 'ПолеТабличногоДокумента' равен по шаблону:
 				| 'Errors'                                                                                                                                                                                   |
-				| 'The selected currency KZT does not correspond to the currencies set in parameter regulation:\n	Scenario: "ВА - Основной сценарий",\n	Company: "Меркурий ООО",\n	Period: "Январь 2021 г."' |
+				| 'The selected currency KZT does not correspond to the currencies set in parameter regulation:\n	Scenario: "ВА - Основной сценарий",\n	Company: "Меркурий ООО",\n	Period: "Январь 2021*"' |
 		Когда открылось окно "Протокол"
 		И Я закрываю окно "Протокол"
 
