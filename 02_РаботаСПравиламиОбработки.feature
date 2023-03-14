@@ -560,9 +560,9 @@
 				И в таблице 'Определения' я выбираю текущую строку
 				Тогда элемент формы с именем 'ПолеТекстовогоДокументаПроцедура' стал равен 
 					|' UPerimeterContent('|
-					|'	[<Scenario>], [<ReportPeriod>], [<Company>],'|
+					|'	[<Scenario>], [<ReportPeriod>], [<Organization>],'|
 					|'	[<ConsolidationMethod>], [<MinTotalOwnershipShare>], [<MaxTotalOwnershipShare>],'|
-					|'	[<CompanyTypes>], [<PerimeterOwner>]);'|
+					|'	[<OrganizationTypes>], [<PerimeterOwner>]);'|
 				И в поле с именем 'ПолеТекстовогоДокументаПроцедура' я ввожу текст ' '
 			* СоставПериметраДляЭлиминации
 				И в таблице 'Определения' я перехожу к строке:
@@ -691,7 +691,7 @@
 		Иначе
 			И в поле с именем 'ПолеТекстовогоДокументаПроцедура' я ввожу текст 
 				|'ReportData = New Structure(\"Организация,Сценарий,Валюта,ПериодОтчета\",'|
-				|'  CalcStructure.Entity, CalcStructure.Scenario, CalcStructure.BaseCurrency, CalcStructure.ArrayPeriods);'|
+				|'  CalcStructure.Organization, CalcStructure.Scenario, CalcStructure.MainCurrency, CalcStructure.PeriodsArray);'|
 				|'DisclosedAnalysts = New Structure(\"Аналитика1\");'|
 				|'ExtraOptions = New Structure(\"ОбщийИтог\",Перечисления.ВидыИтоговПоказателя.Сумма);'|
 				|''|
@@ -713,8 +713,8 @@
 				|'For Each StringValue In tValuesIndicators_Number Do'|
 				|''|
 				|' PeriodOffset = URelativePeriod(StringValue.ПериодОтчета, 1);'|
-				|' If UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1)) OR'|
-				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
+				|' If UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.PeriodsArray.Get(1)) OR'|
+				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.PeriodsArray.Get(2)) Then'|
 				|''|
 				|'  USetIndicatorsValue('|
 				|'   StringValue.ПоказательОтчета,'|
@@ -733,8 +733,8 @@
 				|' EndIf;'|
 				|''|
 				|' PeriodOffset = URelativePeriod(StringValue.ПериодОтчета, 1);'|
-				|' Если UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(1)) OR'|
-				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.ArrayPeriods.Get(2)) Then'|
+				|' Если UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.PeriodsArray.Get(1)) OR'|
+				|'  UDateBelongsToPeriod(PeriodOffset.ДатаНачала,CalcStructure.PeriodsArray.Get(2)) Then'|
 				|''|
 				|'  USetIndicatorsValue('|
 				|'   StringValue.ПоказательОтчета,'|
