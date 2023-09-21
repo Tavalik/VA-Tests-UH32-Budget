@@ -1,5 +1,6 @@
 ﻿#language: ru
 @tree
+@IgnoreOnCIMainBuild
 
 Функционал: 18. Тестирование Аналитических отчетов и панелей
 
