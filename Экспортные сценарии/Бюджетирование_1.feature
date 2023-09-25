@@ -17,7 +17,7 @@
 	И я нажимаю на кнопку с именем 'Find'
 	Тогда в таблице 'СписокВидовОтчетов' количество строк 'равно' 1
 
-Сценарий: Открылся экземпляр отчета для вида отчета 'TheReportKind' валюта 'TheCurrency' организация 'TheBusinessUnit' сценарий 'TheScenario' периодичность 'TheFrequency' проект 'TheProject' аналитики 'TheDimension1' 'TheDimension2' 'TheDimension3' 'TheDimension4' 'TheDimension5' 'TheDimension6' 
+Сценарий: Открылся экземпляр отчета для вида отчета "TheReportKind" валюта "TheCurrency" организация "TheBusinessUnit" сценарий 'TheScenario' периодичность 'TheFrequency' проект 'TheProject' аналитики 'TheDimension1' 'TheDimension2' 'TheDimension3' 'TheDimension4' 'TheDimension5' 'TheDimension6' 
 
 	Если '$$ЯзыкИнтерфейса$$ = "Ru"' Тогда
 		И я запоминаю строку 'Экземпляр отчета \"[TheReportKind]\": <[TheCurrency]> <[TheBusinessUnit]> <* - * (Периодичность: [TheFrequency]) <[TheScenario]>>' в переменную 'ЗаголовокОкна'
