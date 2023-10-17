@@ -49,7 +49,7 @@
 	Тогда таблица '[TheTable]' содержит строки:
 		| 'Таблица' |	
 
-Сценарий: Я в списке 'TheListName' по полю 'TheField' ищу элемент 'ThePattern' 'TheCompareType' 
+Сценарий: Я в списке "TheListName" по полю "TheField" ищу элемент "ThePattern" "TheCompareType" 
 
 	Тогда открылось окно '[TheListName]'
 	Если кнопка с именем 'ФормаНайти' существует Тогда
@@ -64,7 +64,7 @@
 	И я нажимаю на кнопку с именем 'Find'
 	И я жду открытия окна '[TheListName]' в течение 10 секунд
 
-Сценарий: Я в списке 'TheListName' по полю 'TheField' ищу и выбираю элемент 'ThePattern' 'TheCompareType' 
+Сценарий: Я в списке "TheListName" по полю "TheField" ищу и выбираю элемент "ThePattern" "TheCompareType" 
 
 	Тогда открылось окно '[TheListName]'
 	Если кнопка с именем 'ФормаНайти' существует Тогда
