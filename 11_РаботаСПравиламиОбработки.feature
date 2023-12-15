@@ -365,7 +365,7 @@
 		Иначе
 			Тогда элемент формы с именем 'ПолеТекстовогоДокументаПроцедура' стал равен 
 				|' ArrayIndicators = New Array;'|
-				|'ArrayIndicators.Add(\"VASales:ProductRange_Quantity\");'|
+				|'ArrayIndicators.Add(\"VASales:ProductRange_Count\");'|
 				|'tValuesIndicators = UGetIndicatorsValue(New Structure(\"IndicatorsReports\", ArrayIndicators));'|
 				|''|
 		И в поле с именем 'ПолеТекстовогоДокументаПроцедура' я ввожу текст ' '
@@ -688,7 +688,7 @@
 				|'ExtraOptions = New Structure(\"ОбщийИтог\",Перечисления.ВидыИтоговПоказателя.Сумма);'|
 				|''|
 				|'ArrayIndicators = New Array;'|
-				|'ArrayIndicators.Add(\"VASales:ProductRange_Quantity\");'|
+				|'ArrayIndicators.Add(\"VASales:ProductRange_Count\");'|
 				|'ReportData.Insert(\"ПоказателиОтчетов\", ArrayIndicators);'|
 				|'tValuesIndicators_Number = UGetIndicatorsValue('|
 				|' 	ReportData, DisclosedAnalysts);'|

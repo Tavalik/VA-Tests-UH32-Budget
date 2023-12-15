@@ -605,9 +605,9 @@
 						| 'Import - "VA - ProcessPrice"'                                                                                  | '' | '' | '' | ''          | ''                 | ''           | ''                 |
 						| 'VA - ProcessPrice'                                                                                             | '' | '' | '' | 'X'         | ''                 | 'X'          | ''                 |
 						| 'VA - ProcessPrice'                                                                                             | '' | '' | '' | ''          | 'Work in progress' | ''           | 'Work in progress' |
-						| 'Manual filling - "VA - ProcessQuantity"'                                                                       | '' | '' | '' | ''          | ''                 | ''           | ''                 |
-						| 'VA - ProcessQuantity'                                                                                          | '' | '' | '' | 'X'         | ''                 | 'X'          | ''                 |
-						| 'VA - ProcessQuantity'                                                                                          | '' | '' | '' | ''          | 'Work in progress' | ''           | 'Work in progress' |
+						| 'Manual filling - "VA - ProcessCount"'                                                                       | '' | '' | '' | ''          | ''                 | ''           | ''                 |
+						| 'VA - ProcessCount'                                                                                          | '' | '' | '' | 'X'         | ''                 | 'X'          | ''                 |
+						| 'VA - ProcessCount'                                                                                          | '' | '' | '' | ''          | 'Work in progress' | ''           | 'Work in progress' |
 				Иначе
 					Тогда табличный документ 'РезультатМатрицаОтчетов' равен:
 						| "Управление отчетным периодом \nЯнварь 2024 г. - Март 2024 г. (Периодичность: Месяц) <ВА - Процесс подготовки отчетности>" | '' | '' | '' | "Венера ООО" | "Земля ООО" | "Меркурий ООО" | "Система ООО" |
