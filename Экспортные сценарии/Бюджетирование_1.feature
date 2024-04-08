@@ -22,7 +22,7 @@
 	Если '$$ЯзыкИнтерфейса$$ = "Ru"' Тогда
 		И я запоминаю строку 'Экземпляр отчета \"[TheReportKind]\": <[TheCurrency]> <[TheBusinessUnit]> <* - * (Периодичность: [TheFrequency]) <[TheScenario]>>' в переменную 'ЗаголовокОкна'
 	ИначеЕсли '$$ЯзыкИнтерфейса$$ = "En"' Тогда
-		И я запоминаю строку 'Report instance \"[TheReportKind]\": <[TheCurrency]> <[TheBusinessUnit]> <* - * (Frequency: [TheFrequency]) <[TheScenario]>>' в переменную 'ЗаголовокОкна'		
+		И я запоминаю строку 'The \"[TheReportKind]\" report instance: <[TheCurrency]> <[TheBusinessUnit]> <* - * (Frequency: [TheFrequency]) <[TheScenario]>>' в переменную 'ЗаголовокОкна'			
 
 	Если 'НЕ ПустаяСтрока("[TheProject]")' Тогда
 		И я запоминаю строку '$ЗаголовокОкна$ <[TheProject]>' в переменную 'ЗаголовокОкна'
